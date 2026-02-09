@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Álbum — Davi & Eduarda</title>
+  <style>
+    /* ---------- Design Tokens ---------- */
+    :root {
+      --bg-main: #ffffff;
+      --bg-card: #f7f7f9;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --accent: #2563eb;
+      --border-soft: #e5e7eb;
+      --shadow-sm: 0 4px 12px rgba(0,0,0,0.08);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max-width: 1000px;
+    }
+
+    /* ---------- Reset ---------- */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+  margin: 0;
+  font-family: "Arial Black", Arial, sans-serif;
+  /* Fundo com a imagem fornecida */
+  background-image: url("https://github.com/Projetoholyrics/album-de-fotos-/blob/main/pngtree-happy-valentines-day-shiny-hearts-background-with-text-space-image_15620980.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #0f172a;
+}
+    img { max-width: 100%; display: block; }
+
+    /* ---------- Layout ---------- */
+    .cover {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      /* Transparente para aparecer o fundo de corações */
+      background: transparent;
+    }
+
+    .cover h1 {
+      font-size: clamp(2rem, 4vw, 2.7rem);
+      margin: 0 0 .75rem 0;
+      letter-spacing: .02em;
+    }
+
+    .cover p {
+      max-width: 520px;
+      margin: .25rem 0;
+      color: var(--text-muted);
+    }
+
+    .album {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1rem 4rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .page {
+      background: rgba(255,255,255,0.85); /* cartão levemente translúcido para leitura */
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.75rem 2rem;
+      box-shadow: var(--shadow-sm);
+      backdrop-filter: blur(2px);
+    }
+
+    .page h2 {
+      margin: 0 0 .75rem 0;
+      font-size: 1.35rem;
+      color: var(--accent);
+    }
+
+    .page p { margin: 0; color: var(--text-muted); }
+
+    /* ---------- Galeria Profissional ---------- */
+    .gallery {
+      margin-top: 1.25rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-soft);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .gallery img:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text-muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <h1>Davi & Eduarda 💙</h1>
+    <p>Nosso álbum de amor — Desde 28 de setembro de 2024</p>
+    <p>(Role para ver nossa história)</p>
+  </section>
+
+  <main class="album">
+    <section class="page">
+      <h2>Como tudo começou</h2>
+      <p>
+        Foi em um simples "oi" que nossa história começou. Horas de conversa,
+        risadas, descobertas e um sentimento que só crescia. Desde então,
+        cada dia tem sido mais especial ao seu lado.
+      </p>
+    </section>
+
+    <section class="page">
+      <h2>Nossos momentos</h2>
+      <p>Alguns dos momentos que guardamos com carinho.</p>
+      <div class="gallery">
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/1.jpg" alt="Foto 1" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/2.jpg" alt="Foto 2" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/3.jpg" alt="Foto 3" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/4.jpg" alt="Foto 4" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/5.jpg" alt="Foto 5" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/6.jpg" alt="Foto 6" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/7.jpg" alt="Foto 7" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/8.jpg" alt="Foto 8" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/9.jpg" alt="Foto 9" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/10.jpg" alt="Foto 10" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/11.jpg" alt="Foto 11" />
+        <img loading="lazy" src="https://raw.githubusercontent.com/Projetoholyrics/album-de-fotos-/beec2c0e0196e9c82b2ce515925a6fd9e050f606/12.jpg" alt="Foto 12" />
+      </div>
+    </section>
+
+    <section class="page">
+      <h2>Uma mensagem pra você</h2>
+      <p>
+        Cada sorriso meu tem você. Cada pensamento meu tem você. Você é o meu
+        sorriso, a minha alegria. Mal posso esperar para viver ainda mais
+        histórias ao seu lado.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Feito com amor por Davi 💙
+  </footer>
+</body>
+<a href="galeria de fotos.html" class="btn-galeria"
+   style="
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   padding: 12px 20px;
+   background: #2563eb;
+   color: white;
+   text-decoration: none;
+   border-radius: 999px;
+   font-weight: bold;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+   z-index: 999;
+   ">
+   📷 Ver Galeria
+</a>
+
+</html>
